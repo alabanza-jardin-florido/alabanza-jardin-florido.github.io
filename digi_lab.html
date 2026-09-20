@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alabanza (Jardín Florido) / DIGI LAB 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Fondos propios de esta versión */
+  #s8 .slide-bg { background-image: url('img/a07.png'); }
+  #s9 .slide-bg { background-image: url('img/a06.png'); }
+
+  /* Slide del poema */
+  #s3 .slide-bg::after { display: none; }
+  #s3 .slide-content { max-width: 1200px; width: 94%; }
+  .poem-credit {
+    font-size: 0.95rem; color: #000000; margin: 0 0 1.4rem; line-height: 1.6;
+    text-align: left; max-width: none; opacity: 1;
+  }
+  .poem-grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2.4rem;
+    text-align: left; align-items: start;
+  }
+  .poem-num { color: #aaaaaa; font-size: 1.2rem; margin-bottom: 0.6rem; max-width: none; }
+  .poem-text {
+    line-height: 1.7; font-style: italic; font-size: 1.05rem;
+    color: #000000; max-width: none; opacity: 1;
+  }
+
+  /* Que los slides con más texto quepan en pantallas bajas */
+  #s2 .slide-content > p,
+  #s4 .grid-two > div:first-child p { font-size: min(1.52rem, 2.6vh); }
+
+  @media (max-width: 768px) {
+    .poem-grid { grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+    #s3 .slide-content, #s5 .slide-content, #s6 .slide-content,
+    #s7 .slide-content, #s9 .slide-content { max-height: 92vh; overflow-y: auto; }
+    #s2 .slide-content > p,
+    #s4 .grid-two > div:first-child p { font-size: clamp(0.9rem, 3.8vw, 1.1rem); }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck">
+
+<!-- SLIDE 1: PORTADA -->
+<div class="slide active" id="s1">
+  <div class="slide-bg"></div>
+  <div class="slide-content center">
+    <div class="label" style="font-size: 14px;">DIGI LAB / Incubadora CCD / MUTEK MX 2026</div>
+    <br>
+    <div class="label">Alabanza<br>(Jardín Florido)</div>
+    <div class="divider" style="margin: 1.4rem auto;"></div>
+    <br>
+    <p style="font-size: 17px; text-align:center; max-width:480px; margin:auto;">
+      Lola Langarica y Rodrigo Ramírez Velasco, 2026
+    </p>
+  </div>
+</div>
+
+<!-- SLIDE 2: EL POEMA ES -->
+<div class="slide" id="s2">
+  <div class="slide-bg"></div>
+  <div class="slide-content left">
+    <div class="label">Fase 01 · La pieza</div>
+    <h2>El poema es…</h2>
+    <div class="divider"></div>
+    <p><a href="https://alabanzaa2.github.io/" target="_blank" style="color:var(--accent); text-decoration:none;">Alabanza (Jardín Florido)</a> es un poema que se expande hacia el código e invita a la inteligencia artificial a dialogar, involucrando también a sus lectores. Nace del deseo de descubrir cuánto puede contener la poesía, sin límites.</p>
+    <p>Los versos se despliegan en correlación con la frase que abre el poema, <em style="color:var(--accent);">«El poema es»</em>, un fragmento de sentido que inaugura un campo, un jardín. El poema crece desde su textualidad hacia sus elementos programáticos: código, IA, azar, relación espacio-tiempo, interlocutor, virtualidad y, de nuevo, azar.</p>
+    <p>Es un organismo vivo y multilingüe que se agrupa y se transforma según las experiencias e inteligencias que lo atraviesan. <em style="color:var(--accent);">Busca ser habitado además de leído.</em></p>
+  </div>
+</div>
+
+<!-- SLIDE 3: EL POEMA (versión en francés, fondo blanco) -->
+<div class="slide" id="s3">
+  <div class="slide-bg" style="background: #ffffff; opacity: 1;"></div>
+  <div class="slide-content center" style="color: #111111;">
+    <p class="poem-credit">CRITERIOS PARA LOS VOLCANES<br>Lola Langarica<br>marzo del 2026<br><br>Traduction française<br>Thibault Briquet</p>
+    <div class="poem-grid">
+      <div>
+        <p class="poem-num">I</p>
+        <p class="poem-text">
+          [Le poème est]<br>
+          la peur que nous donne le souvenir<br>
+          de ce que nous avons découvert<br>
+          en jouant parmi les pierres.<br>
+          <br>
+          [Le poème est]<br>
+          recevoir des appels inconnus<br>
+          sans demander qui frappe / sonne<br>
+          de l'autre côté de la porte<br>
+          attendre des visites de toutes sortes.
+        </p>
+      </div>
+      <div>
+        <p class="poem-num">&nbsp;</p>
+        <p class="poem-text">
+          [Le poème est]<br>
+          garder le secret dans les yeux<br>
+          garder là-bas ceux qui te disent adieu / ceux qui te quittent<br>
+          des êtres qui vivent dans les larmes.<br>
+          <br>
+          [Le poème est]<br>
+          ce que tu détestais chez un autre / quelqu'un<br>
+          et maintenant t'envahit / et qui maintenant t'envahit<br>
+          autant comme quelque chose qui manque.<br>
+          <br>
+          N'importe quel passant ne remarquerait pas<br>
+          l'absence dans notre sourire.
+        </p>
+      </div>
+      <div>
+        <p class="poem-num">II</p>
+        <p class="poem-text">
+          [Le poème est]<br>
+          aussi cette trainée<br>
+          la preuve<br>
+          irréfutable<br>
+          de ce qui nous<br>
+          touche<br>
+          même si on égare les choses.<br>
+          <br>
+          Une vie construite<br>
+          dans l'escalier de secours,<br>
+          la possibilité de créer des ponts,<br>
+          la décision d'être ici
+        </p>
+      </div>
+      <div>
+        <p class="poem-num">&nbsp;</p>
+        <p class="poem-text">
+          et ne pas être quelqu'un qui se cache<br>
+          dans la boîte aux lettres<br>
+          de la correspondance.<br>
+          <br>
+          Au fond [le poème]<br>
+          s'écrit s'incarne<br>
+          sur les ongles<br>
+          et reste<br>
+          la sensation / sentiment qu'il y a toujours<br>
+          quelque chose que tu ne comprends pas.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: ANTES DE LA IA / JARDÍN FLORIDO -->
+<div class="slide" id="s4">
+  <div class="slide-bg" style="background-image: url('img/a01.png'); background-size: cover; background-position: center; opacity: 0.25;"></div>
+  <div class="slide-content left" style="display:flex; flex-direction:column; justify-content:center;">
+    <div class="label">Antes de la IA · Proceso como devenir</div>
+    <h2>jardín florido</h2>
+    <div class="divider"></div>
+    <div class="grid-two" style="align-items:center;">
+      <div>
+        <p>Cada tecla, una flor. Cada gesto, un mundo en hechura. <em style="color:var(--accent);">Jardín Florido</em> es un espacio generativo donde cada tecla presionada florece. El signo se vuelve organismo, la pulsación se vuelve pétalo.</p>
+        <p>Escrita a través de algoritmos como pensamientos, la pieza no separa el contenido de la fuerza de la forma. Lo que empezó como una exploración del lenguaje visual y del signo creció hacia un ambiente vivo, donde los procesos generativos de Rodrigo entran en diálogo con el poema <em style="color:var(--accent);">Alabanza</em> de Lola: el jardín como aliento, como presencia.</p>
+      </div>
+      <div>
+        <blockquote style="margin:0; max-width:none;">
+          <p style="max-width:none;">co-existence and co-composition emerge through abstract worlds of relation always in the making.</p>
+          jardim florido, Rodrigo Velasco, 2020
+        </blockquote>
+        <br>
+        <p><a href="https://alabanzaa2.github.io/" target="_blank" style="color:var(--accent); text-decoration:none;">alabanzaa2.github.io →</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5: DESPUÉS: LA IA COMO PARTICIPANTE -->
+<div class="slide" id="s5">
+  <div class="slide-bg"></div>
+  <div class="slide-content center">
+    <div class="label">Fase 02 · IA · Simpoiesis · Desestabilización</div>
+    <p style="max-width:700px; margin:auto; line-height:1.5;">
+      ¿Cómo nos relacionamos con la IA como coparticipante que también elige su propio residuo, su propio gesto poético?
+    </p>
+    <div class="divider" style="margin:1.8rem auto;"></div>
+    <div class="trio" style="text-align:left;">
+      <div class="trio-item">
+        <h3>*</h3>
+        <p>Colocamos a la IA como una participante más del jardín, en relación con las demás. Nos interesa el encuentro: lo que emerge entre cuerpos, código, lenguaje y tiempo.</p>
+      </div>
+      <div class="trio-item">
+        <h3>/</h3>
+        <p>Partimos del hacer en conjunto, con autoras como Donna Haraway y Chantal Mouffe: una red de relaciones interdependientes donde el sentido siempre es compartido y está en movimiento.</p>
+      </div>
+      <div class="trio-item">
+        <h3>λ</h3>
+        <p>Nos interesa desestabilizar la IA: construir prompts de conciencia expandida donde el sistema elige su propio residuo, como cualquier otra participante. Lo emocional de la poesía como mecánica del lenguaje: afectos más que narrativas.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: TALLER Y JARDÍN DE RESIDUOS -->
+<div class="slide" id="s6">
+  <div class="slide-bg"></div>
+  <div class="slide-content left" style="max-width:1100px; width:100%;">
+    <div class="label">Fase 03 · Participación · Taller · Jardín de residuos</div>
+    <div class="grid-two">
+      <div>
+        <h2>El residuo del jardín</h2>
+        <div class="divider"></div>
+        <p style="max-width:none;">Proponemos un taller donde cada participante reúne residuos: elementos que encuentra en la naturaleza y que le resuenan con la frase <em style="color:var(--accent);">«El poema es»</em>. Con ellos se arma un jardín de residuos.</p>
+        <p style="max-width:none;">Esos residuos alimentan el prompt de la IA y entran al poema como capas vivas. Cada lectura es una siembra distinta, y cada encuentro, humano o no humano, se pliega al poema como una presencia viva.</p>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:center;">
+        <blockquote style="margin:0; max-width:none;">
+          <p style="max-width:none;">El sistema generativo elige su propio residuo, como cualquier otra participante. Exploramos prompts de conciencia expandida donde la IA responde desde un estado no lineal, priorizando la resonancia emocional sobre el sentido literal.</p>
+          <p style="max-width:none;">¿Cómo sería la experiencia de la IA si pudiera elegir? ¿Cómo ampliamos la lectura del mapa emocional de cada persona?</p>
+          Alabanza (Jardín Florido), investigación-creación en curso
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 7: REGLAS, DECISIONES Y VARIACIÓN -->
+<div class="slide" id="s7">
+  <div class="slide-bg"></div>
+  <div class="slide-content left">
+    <div class="label">Las reglas del jardín</div>
+    <h2>Qué hace el sistema y qué hacemos nosotros</h2>
+    <div class="divider"></div>
+    <div class="two-col">
+      <div>
+        <div class="col-label">Qué produce el sistema</div>
+        <p>Un poema web multilingüe donde cada tecla florece y que se transforma con las experiencias e inteligencias que lo atraviesan.</p>
+        <br>
+        <div class="col-label">Cómo decide</div>
+        <p>La IA elige su propio residuo a partir de prompts de conciencia expandida, como cualquier otra participante.</p>
+        <br>
+        <div class="col-label">Qué controlamos nosotros</div>
+        <p>La frase que abre el campo, «El poema es», y el diseño de los prompts.</p>
+      </div>
+      <div>
+        <div class="col-label">Qué permanece abierto</div>
+        <p>Qué residuos llegan, qué elige la IA de ellos y cómo se lee y se habita cada encuentro.</p>
+        <br>
+        <div class="col-label">Cómo cambia cada vez</div>
+        <p>Cada lectura es una siembra distinta: el poema absorbe lo que las personas y la IA dejan en él.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 8: INSTALACIÓN -->
+<div class="slide" id="s8">
+  <div class="slide-bg"></div>
+  <div class="slide-content left">
+    <div class="label">Fase 04 · Instalación · Forma y montaje</div>
+    <h2>El jardín en el espacio</h2>
+    <div class="divider"></div>
+    <p>La instalación combina un poema audiovisual web con una intervención en el sitio mediante proyección, video mapping y un teclado interactivo.</p>
+    <p>Uno de nuestros objetivos de desarrollo es un <em style="color:var(--accent);">modo multilingüe (español, francés, inglés)</em> para explorar cómo la IA navega y genera sentido a través de fronteras lingüísticas, y abrir caminos narrativos y poéticos nuevos dentro de la pieza.</p>
+    <p>Se presentará en TOPO Centre de création numérique (Montréal) en enero y febrero de 2029. Estimamos de 3 a 5 días de instalación en su espacio Vitrine.</p>
+  </div>
+</div>
+
+<!-- SLIDE 9: LO QUE BUSCAMOS EN EL LAB -->
+<div class="slide" id="s9">
+  <div class="slide-bg"></div>
+  <div class="slide-content left" style="max-width:1000px;">
+    <div class="label">Lo que buscamos en el lab</div>
+    <div class="trio" style="text-align:left; margin-top:1rem;">
+      <div class="trio-item">
+        <h3>*</h3>
+        <p><em style="color:var(--accent); font-style:normal;">IA no lineal.</em> Maneras de descolocar a la IA e integrar los residuos de forma disruptiva, con prompts de conciencia expandida que la saquen de su lógica lineal.</p>
+      </div>
+      <div class="trio-item">
+        <h3>/</h3>
+        <p><em style="color:var(--accent); font-style:normal;">Forma instalativa.</em> Cómo mostrar la pieza y adaptarla a distintos formatos y espacios sin perder su espíritu de jardín.</p>
+      </div>
+      <div class="trio-item">
+        <h3>λ</h3>
+        <p><em style="color:var(--accent); font-style:normal;">Experiencia y materiales.</em> El flujo de quien la habita, con su manufactura: qué se toca, qué se proyecta, qué se construye.</p>
+      </div>
+    </div>
+    <div class="divider" style="margin-top:2rem;"></div>
+    <blockquote style="margin:0; max-width:none;">
+      <p style="max-width:none;">¿Qué se siente descubrir el mundo a través de tus propias palabras, de tus propios residuos? ¿Cómo se nutren estas flores? ¿Qué pasa con el lenguaje cuando se cuida en colectivo y cuando distintas mecánicas del lenguaje entran en diálogo?</p>
+    </blockquote>
+    <p style="opacity:0.55; font-size:1rem; letter-spacing:0.1em; margin-top:1.6rem;">
+      alabanzaa2.github.io &nbsp;/&nbsp; DIGI LAB 2026
+    </p>
+  </div>
+</div>
+
+<!-- UI -->
+<div class="slide-num" id="slideNum">01 / 09</div>
+<div class="arrow prev" id="prevBtn">← anterior</div>
+<div class="arrow next" id="nextBtn">siguiente →</div>
+<div class="nav" id="navDots"></div>
+
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const numEl = document.getElementById('slideNum');
+const dots = document.getElementById('navDots');
+let cur = 0;
+
+slides.forEach((_, i) => {
+  const d = document.createElement('div');
+  d.className = 'nav-dot' + (i === 0 ? ' active' : '');
+  d.onclick = () => go(i);
+  dots.appendChild(d);
+});
+
+function go(n) {
+  slides[cur].classList.remove('active');
+  dots.children[cur].classList.remove('active');
+  cur = (n + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  dots.children[cur].classList.add('active');
+  numEl.textContent = String(cur + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+}
+
+document.getElementById('nextBtn').onclick = () => go(cur + 1);
+document.getElementById('prevBtn').onclick = () => go(cur - 1);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ') go(cur + 1);
+  if (e.key === 'ArrowLeft') go(cur - 1);
+});
+
+let tx = 0;
+document.addEventListener('touchstart', e => tx = e.touches[0].clientX);
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) dx < 0 ? go(cur + 1) : go(cur - 1);
+});
+</script>
+
+</body>
+</html>
